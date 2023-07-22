@@ -1,321 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Portfolio Website-Brad</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <title>Pablo Oliveira</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pablo Oliveira's portfolio.">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="data/styles/style.css">
+    <link rel="stylesheet" href="data/styles/project-content.css">
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Brad</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                
+<body onLoad="LoadPortfolio(0)">
+    <div class="site-wrap cfix js-site-wrap">
+        <header class="site-header" data-context="theme.topcontainer" data-hover-hint="header">
+            <div class="logo-container">
+                <div class="logo-wrap" data-hover-hint="logo">
+                    <div class="logo e2e-site-logo-text logo-text  ">
+                        <div class="preserve-whitespace">Pablo E. N. Oliveira</div>
+                    </div>
+                    <div class="logo-secondary logo-secondary-text ">
+                        <span class="preserve-whitespace">Game Programmer</span>
+                    </div>
+                </div>
+                <div class="social pf-nav-social" data-hover-hint="navSocialIcons">
+                    <ul>
+                        <li>
+                            <a href="mailto:pablo.nog.olvr@gmail.com" target="_blank">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24"
+                                    style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                                    <g>
+                                        <path
+                                            d="M15,13L7.1,7.1c0-0.5,0.4-1,1-1h13.8c0.5,0,1,0.4,1,1L15,13z M15,14.8l7.9-5.9v8.1c0,0.5-0.4,1-1,1H8.1c-0.5,0-1-0.4-1-1 V8.8L15,14.8z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/pablo-oliveira-6508b9175/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" viewBox="0 0 30 24" xml:space="preserve" class="icon">
+                                    <g>
+                                        <path
+                                            d="M19.6,19v-5.8c0-1.4-0.5-2.4-1.7-2.4c-1,0-1.5,0.7-1.8,1.3C16,12.3,16,12.6,16,13v6h-3.4 c0,0,0.1-9.8,0-10.8H16v1.5c0,0,0,0,0,0h0v0C16.4,9,17.2,7.9,19,7.9c2.3,0,4,1.5,4,4.9V19H19.6z M8.9,6.7L8.9,6.7 C7.7,6.7,7,5.9,7,4.9C7,3.8,7.8,3,8.9,3s1.9,0.8,1.9,1.9C10.9,5.9,10.1,6.7,8.9,6.7z M10.6,19H7.2V8.2h3.4V19z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pabloolvr" target="_blank">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 24"
+                                    style="enable-background:new 0 0 30 24;" xml:space="preserve" class="icon">
+                                    <g>
+                                        <path
+                                            d="M15,4c-4.5,0-8.2,3.7-8.2,8.2c0,3.6,2.4,6.7,5.6,7.8c0.4,0.1,0.6-0.2,0.6-0.4c0-0.2,0-0.8,0-1.5 c-2.3,0.5-2.8-1-2.8-1c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5c0.8,0.1,1.3,0.8,1.3,0.8c0.7,1.3,1.9,0.9,2.4,0.7 c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.7-0.9-3.7-4.1c0-0.9,0.3-1.6,0.8-2.2c-0.1-0.2-0.4-1,0.1-2.2c0,0,0.7-0.2,2.3,0.8 C13.6,8.1,14.3,8,15,8c0.7,0,1.4,0.1,2.1,0.3c1.6-1.1,2.3-0.8,2.3-0.8c0.4,1.1,0.2,2,0.1,2.2c0.5,0.6,0.8,1.3,0.8,2.2 c0,3.2-1.9,3.8-3.7,4c0.3,0.3,0.6,0.8,0.6,1.5c0,1.1,0,2,0,2.3c0,0.2,0.1,0.5,0.6,0.4c3.3-1.1,5.6-4.2,5.6-7.8 C23.2,7.7,19.5,4,15,4z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav data-hover-hint="nav">
+                <div class="pages">
+                    <div class="gallery-title">
+                        <div class="active" onClick="LoadPortfolio(0);">Portfolio</div>
+                    </div>
+                    <div class="page-title">
+                        <div onClick="LoadPortfolio(1);">Other works and personal projects</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="site-container">
+            <div class="site-content e2e-site-content">
+                <main>
+                    <section id="project-content" class="project-covers" data-context="page.gallery.covers">
+                    </section>
+                    <section class="back-to-top" data-hover-hint="backToTop">
+                        <a href="#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+                    </section>
+                    <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop"
+                        data-hover-hint-placement="top-start" href="#">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26"
+                            style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+                            <g>
+                                <path
+                                    d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4 c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1 c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1 c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11 c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9 c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1 c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </main>
             </div>
         </div>
-    </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Brad</h2>
-                <p class="hero_desc">I am a professional freelancer in New York City</p>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/about.jpeg" class= "imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                        
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/nav-selection.js"></script>
+    <script src="scripts/portfolio-area.js"></script>
 
 </body>
-
 </html>

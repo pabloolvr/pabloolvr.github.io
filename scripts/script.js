@@ -1,3 +1,4 @@
+/*
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
 console.log(header)
@@ -17,3 +18,4 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
+*/

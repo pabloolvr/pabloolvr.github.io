@@ -1,0 +1,68 @@
+.page {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+
+.page-header {
+    margin-right: auto;
+    max-width: 800px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.page-header .title {
+    color: rgb(205, 207, 229);
+    font-family: 'Inconsolata';
+    font-size: 60px;
+    font-style: normal;
+    line-height: 64px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.page-header .description {
+    color: rgba(205, 207, 229, 0.8);
+    font-family: 'Inconsolata';
+    font-size: 22px;
+    font-style: normal;
+    line-height: 28px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    margin: 0px auto;
+}
+
+.project-module {
+    clear: both;
+    word-break: break-word;
+}
+
+.standard-modules .text {
+    margin-right: auto;
+    padding-top: 30px;
+    width: 100%;
+}
+
+text,
+.standard-modules .rich-text div,
+.standard-modules .rich-text p {
+    color: rgba(205, 207, 229, 0.8);
+    font-family: 'Inconsolata';
+    font-size: 22px;
+    font-style: normal;
+    line-height: 28px;
+    padding-bottom: 25px;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: none;
+}
