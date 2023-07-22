@@ -920,6 +920,92 @@ nav .link-title {
     display: inline-block;
 }
 
+@media (max-width: 768px) {
+    main {
+        padding-top: 0;
+    }
+
+    main,
+    .site-container {
+        width: 100%;
+    }
+
+    .pf-nav-social li {
+        padding-top: 24px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 12px;
+    }
+
+    .project-cover .custom1,
+    .project-cover .custom2,
+    .project-cover .description {
+        display: none;
+    }
+
+    .project-cover .cover-content-container {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    .site-content {
+        margin: 0;
+        padding: 0 2%;
+        width: 100%;
+    }
+
+    .sidebar-content {
+        float: none;
+        padding-right: 0;
+        width: auto;
+    }
+
+    .site-header {
+        width: 100%;
+    }
+
+    .project-cover .title {
+        font-size: 39px;
+        line-height: 41px;
+    }
+
+    .project-covers {
+        padding-top: 0;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .project-cover .details-wrap {
+        width: 80%;
+    }
+
+    .project-cover {
+        width: 50%;
+    }
+
+    .project-cover:nth-child(2n) {
+        margin-right: 0 !important;
+    }
+
+    .project-cover:nth-child(3n) {
+        margin-right: 0%;
+    }
+
+    .project-cover:nth-child(3n + 1) {
+        clear: none;
+    }
+
+    .back-to-top {
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+
+    .back-to-top a {
+        font-size: 18px;
+        line-height: 14px;
+    }
+}
+
 @media (max-width: 540px) {
     nav {
         display: none;
@@ -1015,91 +1101,5 @@ nav .link-title {
     .project-covers {
         padding-bottom: 0px;
         padding-top: 0px;
-    }
-}
-
-@media (max-width: 768px) {
-    main {
-        padding-top: 0;
-    }
-
-    main,
-    .site-container {
-        width: 100%;
-    }
-
-    .pf-nav-social li {
-        padding-top: 24px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        padding-right: 12px;
-    }
-
-    .project-cover .custom1,
-    .project-cover .custom2,
-    .project-cover .description {
-        display: none;
-    }
-
-    .project-cover .cover-content-container {
-        margin-bottom: 2%;
-        margin-top: 2%;
-    }
-
-    .site-content {
-        margin: 0;
-        padding: 0 2%;
-        width: 100%;
-    }
-
-    .sidebar-content {
-        float: none;
-        padding-right: 0;
-        width: auto;
-    }
-
-    .site-header {
-        width: 100%;
-    }
-
-    .project-cover .title {
-        font-size: 39px;
-        line-height: 41px;
-    }
-
-    .project-covers {
-        padding-top: 0;
-        padding-bottom: 0px;
-        padding-top: 0px;
-    }
-
-    .project-cover .details-wrap {
-        width: 80%;
-    }
-
-    .project-cover {
-        width: 50%;
-    }
-
-    .project-cover:nth-child(2n) {
-        margin-right: 0 !important;
-    }
-
-    .project-cover:nth-child(3n) {
-        margin-right: 0%;
-    }
-
-    .project-cover:nth-child(3n + 1) {
-        clear: none;
-    }
-
-    .back-to-top {
-        padding-bottom: 30px;
-        padding-top: 40px;
-    }
-
-    .back-to-top a {
-        font-size: 18px;
-        line-height: 14px;
     }
 }

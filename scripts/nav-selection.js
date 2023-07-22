@@ -20,5 +20,4 @@ for (let i = 0; i < pages.length; ++i) {
 
 function LoadPortfolio(projIndex) {
     portfolioArea.innerHTML = pageContent[projIndex];
-    //portfolioArea.style.opacity = 1;
 }

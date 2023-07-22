@@ -5,6 +5,13 @@
 const projects = 
 [
     "pets-rules",
+    "tropical-runners",
+    "lost-on-tenebris",
+    "educa-money",
+    "deep-ocean",
+    "quizeduca",
+    "reconectando",
+    "tower-defense",
 ]
 
 let projectText = [];
@@ -21,5 +28,4 @@ for(let i = 0; i < projects.length; ++i)
 function LoadProject(projIndex)
 {
     projTextArea.innerHTML = projectText[projIndex];
-    //projTextArea.style.opacity = 1;
 }
