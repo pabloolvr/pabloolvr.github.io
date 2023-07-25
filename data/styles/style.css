@@ -119,6 +119,7 @@ html:before {
 .site-container {
     position: relative;
     width: 100%;
+    min-height: 785px;
     background-color: #0D1117;
 }
 

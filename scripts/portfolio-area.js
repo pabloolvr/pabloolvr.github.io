@@ -10,7 +10,7 @@ const projects =
     "educa-money",
     "deep-ocean",
     "quizeduca",
-    "reconectando",
+    "pong",
     "tower-defense",
 ]
 
