@@ -27,8 +27,6 @@ for (let i = 0; i < pages.length; ++i) {
 function LoadPortfolio(projIndex) {
     portfolioArea.innerHTML = pageContent[projIndex];
 
-    console.log(navBars.length);
-    
     for (let i = 0; i < navBars.length; i++) {
         if (i == projIndex) {
             navBars[i].style.color = '#398cff';
