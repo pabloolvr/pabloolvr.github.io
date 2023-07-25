@@ -15,7 +15,6 @@ const projects =
 ]
 
 let projectText = [];
-
 let projTextArea = document.getElementById("project-content");
 
 /* Adds the included text data into the array of text. */
@@ -29,3 +28,4 @@ function LoadProject(projIndex)
 {
     projTextArea.innerHTML = projectText[projIndex];
 }
+
