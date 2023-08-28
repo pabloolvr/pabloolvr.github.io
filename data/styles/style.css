@@ -115,6 +115,10 @@ html:before {
     width: 100%;
 }
 
+.site {
+    background-color: #0D1117;
+}
+
 .site-wrap,
 .site-container {
     position: relative;
