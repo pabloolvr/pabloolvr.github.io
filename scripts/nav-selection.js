@@ -31,10 +31,26 @@ function LoadPortfolio(projIndex)
 
     for (let i = 0; i < navBars.length; i++) 
     {
-        if (i == projIndex) {
+        if (i == projIndex) 
+        {
             navBars[i].style.color = '#398cff';
         }
-        else {
+        else 
+        {
+            navBars[i].style.color = 'rgb(230, 230, 240)';
+        }
+    }
+}
+
+function LoadMainPortfolio() {
+    portfolioArea.innerHTML = pageContent[0];
+
+    for (let i = 0; i < navBars.length; i++) {
+        if (i == 0) {
+            navBars[i].style.color = '#398cff';
+        }
+        else 
+        {
             navBars[i].style.color = 'rgb(230, 230, 240)';
         }
     }
