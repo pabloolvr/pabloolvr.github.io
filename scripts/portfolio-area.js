@@ -27,5 +27,10 @@ for(let i = 0; i < projects.length; ++i)
 function LoadProject(projIndex)
 {
     projTextArea.innerHTML = projectText[projIndex];
+
+    for (let i = 0; i < navBars.length; i++) 
+    {
+        navBars[i].style.color = 'rgb(230, 230, 240)';
+    }
 }
 
