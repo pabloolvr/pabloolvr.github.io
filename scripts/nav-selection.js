@@ -1,5 +1,5 @@
 /*
-    This script handles the content assignment of project data
+    This script handles the content assignment of portfolio data
 */
 
 const pages =
@@ -19,15 +19,18 @@ let navBars =
 
 
 /* Adds the included text data into the array of text. */
-for (let i = 0; i < pages.length; ++i) {
+for (let i = 0; i < pages.length; ++i) 
+{
     pageContent.push("");
     fetch("./data/page-main/" + pages[i] + ".html").then(r => r.text()).then(t => pageContent[i] = t)
 }
 
-function LoadPortfolio(projIndex) {
+function LoadPortfolio(projIndex) 
+{
     portfolioArea.innerHTML = pageContent[projIndex];
 
-    for (let i = 0; i < navBars.length; i++) {
+    for (let i = 0; i < navBars.length; i++) 
+    {
         if (i == projIndex) {
             navBars[i].style.color = '#398cff';
         }
