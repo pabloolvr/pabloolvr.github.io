@@ -12,6 +12,7 @@ const projects =
     "quizeduca",
     "pong",
     "tower-defense",
+    "batalha-da-danca"
 ]
 
 let projectText = [];
