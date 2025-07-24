@@ -42,6 +42,8 @@ function LoadPortfolio(projIndex)
     }
 }
 
-function LoadMainPortfolio() {
+function LoadMainPortfolio() 
+{
     navBars[0].style.color = '#398cff';
+    fetch("./data/page-main/" + pages[0] + ".html").then(r => r.text()).then(t => portfolioArea.innerHTML = t)
 }

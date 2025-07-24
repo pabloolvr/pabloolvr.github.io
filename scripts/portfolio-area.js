@@ -12,7 +12,11 @@ const projects =
     "quizeduca",
     "pong",
     "tower-defense",
-    "batalha-da-danca"
+    "batalha-da-danca",
+    "dananeer",
+    "shiboo-survivors",
+    "tale-of-darkness",
+    "tale-of-souls"
 ]
 
 let projectText = [];
