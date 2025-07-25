@@ -17,6 +17,15 @@
     padding-bottom: 25px;
 }
 
+.row {
+    display: flex;
+}
+
+.two-column {
+    flex: 50%;
+    padding: 5px;
+}
+
 .page a {
     color: rgb(205, 207, 229);
 }
