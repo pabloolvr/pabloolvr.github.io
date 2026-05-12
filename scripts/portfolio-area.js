@@ -16,7 +16,9 @@ const projects =
     "dananeer",
     "shiboo-survivors",
     "tale-of-darkness",
-    "tale-of-souls"
+    "tale-of-souls",
+    "pix-football-manager",
+    "draft-fever-bowl"
 ]
 
 let projectText = [];
